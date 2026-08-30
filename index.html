@@ -3545,24 +3545,6 @@ profileUpload.addEventListener("change",function(){
 });
 
 
-/* =========================================================
-   REMOVE PHOTO
-========================================================= */
-
-removePhoto.addEventListener("click",()=>{
-
-    localStorage.removeItem("profilePhoto");
-
-    profilePreview.innerHTML=`
-        <i class="fas fa-user-tie"></i>
-    `;
-
-    removePhoto.style.display="none";
-
-    profileUpload.value="";
-
-});
-
 
 /* =========================================================
    CONTACT FORM
