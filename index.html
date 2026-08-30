@@ -24,6 +24,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
 <style>
 
+
 /* =========================================================
    ROOT
 ========================================================= */
@@ -2090,7 +2091,32 @@ footer{
             0 0 20px rgba(0,229,255,.2);
     }
 }
+.moving-role{
+    display:inline-block;
+    animation:roleMove 3s ease-in-out infinite;
+}
 
+.role-one{
+    color:var(--primary);
+}
+
+.role-two{
+    color:var(--cyan);
+}
+
+.moving-role b{
+    color:#8b5cf6;
+    margin:0 8px;
+}
+
+@keyframes roleMove{
+    0%,100%{
+        transform:translateX(0);
+    }
+    50%{
+        transform:translateX(12px);
+    }
+}
 
 
     
@@ -3147,11 +3173,15 @@ Send Message
 <div>
 
 <div class="footer-logo">
-<span>M</span>onarul Islam
+<span>M</span>MH Ziko
 </div>
 
-<div class="footer-role">
-IT Officer | CSE Engineer
+<div class="hero-subtitle">
+    <span class="moving-role">
+        <span class="role-one">IT Officer</span>
+        <b>|</b>
+        <span class="role-two">CSE Engineer</span>
+    </span>
 </div>
 
 </div>
